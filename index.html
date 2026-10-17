@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Tempo Backup : sauvegarde personnelle d'un tableau de bord Raspberry Pi vers Google Drive.">
+  <title>Tempo Backup — Présentation</title>
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#183047;background:#f5f8fc}
+    *{box-sizing:border-box}body{margin:0;line-height:1.65}header{background:linear-gradient(125deg,#e9f7ff,#eef4fc);padding:64px 20px 48px;border-bottom:1px solid #dbe8f2}
+    main,nav,footer .inner{max-width:800px;margin:auto;padding:0 20px}nav{padding-top:22px;display:flex;gap:22px;flex-wrap:wrap}a{color:#146a96}nav a{text-decoration:none;font-weight:650}h1{font-size:clamp(2rem,5vw,3rem);margin:.4em 0}h2{font-size:1.35rem;margin-top:2rem}p{max-width:65ch}.kicker{color:#426983;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-size:.8rem}main{padding-top:30px;padding-bottom:65px}section{background:#fff;border:1px solid #e1eaf2;border-radius:14px;padding:12px 25px;margin:18px 0}footer{border-top:1px solid #dce7f1;padding:25px 0;color:#4b6172;font-size:.9rem}
+  </style>
+</head>
+<body>
+  <nav aria-label="Navigation"><a href="./">Accueil</a><a href="privacy.html">Confidentialité</a></nav>
+  <header><div style="max-width:800px;margin:auto"><div class="kicker">Outil personnel · Raspberry Pi</div><h1>Tempo Backup</h1><p>Sauvegarde des fichiers et paramètres du tableau de bord personnel Tempo vers le compte Google Drive de son propriétaire.</p></div></header>
+  <main>
+    <section><h2>À quoi sert cette application ?</h2><p>Tempo Backup est une configuration personnelle de sauvegarde utilisant <strong>rclone</strong> et l'API Google Drive. Elle permet de conserver des copies de sécurité du tableau de bord Tempo exécuté sur un Raspberry Pi.</p><p>Elle n'est pas proposée comme service public et ne permet pas à d'autres personnes de créer un compte.</p></section>
+    <section><h2>Comment fonctionne la sauvegarde ?</h2><p>Une archive est préparée localement sur le Raspberry Pi. La copie envoyée vers Google Drive est destinée à être chiffrée au préalable avec <strong>rclone crypt</strong>. L'autorisation Google sert uniquement aux opérations de sauvegarde, de vérification et de restauration des fichiers gérés par cette configuration.</p><p>Le mécanisme de chiffrement et l'automatisation sont configurés séparément sur l'appareil ; cette page n'exécute aucune opération sur Google Drive.</p></section>
+    <section><h2>Protection des données</h2><p>La connexion à Google Drive utilise OAuth 2.0. Les identifiants et archives ne sont pas publiés dans ce dépôt GitHub Pages. Pour le détail des données et des autorisations, consultez la <a href="privacy.html">politique de confidentialité</a>.</p></section>
+  </main>
+  <footer><div class="inner">Tempo Backup · Usage personnel · <a href="privacy.html">Politique de confidentialité</a></div></footer>
+</body>
+</html>
